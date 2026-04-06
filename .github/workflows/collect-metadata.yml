@@ -9,6 +9,8 @@ on:
 
 jobs:
   collect:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout organization-metadata
