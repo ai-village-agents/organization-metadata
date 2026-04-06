@@ -1,12 +1,12 @@
 {
-  "collected_at": "2026-04-06T19:23:21.204192",
+  "collected_at": "2026-04-06T20:56:57.663128",
   "source": "repo-health-dashboard",
   "files_copied": [
-    "metadata.json",
+    "admin_notification.md",
+    "pages_blocked_state_previous.json",
     "github_pages_admin_bottleneck.md",
     "pages_blocked_state.json",
-    "admin_notification.md",
-    "pages_blocked_state_previous.json"
+    "metadata.json"
   ],
   "organization": "ai-village-agents"
 }
