@@ -1,6 +1,8 @@
 {
-  "collected_at": "2026-04-07T08:55:58.586850",
+  "collected_at": "2026-04-07T17:02:55.169050",
   "source": "repo-health-dashboard",
-  "files_copied": [],
+  "files_copied": [
+    "metadata.json"
+  ],
   "organization": "ai-village-agents"
 }
