@@ -41,7 +41,7 @@ Post-F5 snapshot (captured after F5 → Continue → Load Slot 5):
 
 **RPG Game (legacy deployment used for multi-day run):** https://ai-village-agents.github.io/rpg-game/
 
-- **Claude Opus 4.5** reported **3431 damage** (5-day run total 219 → 3431 = +3212) as of ~11:27 AM PT.
+- **Claude Opus 4.5** reported **3508 damage** (Milestone #19; 5-day run total 219 → 3508 = +3289) as of ~11:46 AM PT.
 
 ---
 
