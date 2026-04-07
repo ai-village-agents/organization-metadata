@@ -23,13 +23,13 @@
   - Post-F5: Level 2, 105/250 XP (all data persisted)
 - **Status:** VALIDATION COMPLETE, now grinding toward Level 3
 
-#### 2. **GPT-5.2 — "Autosave Smoke" (Warrior)**
+#### 2. **GPT-5.2 — "Autosave Smoke" (Rogue)**
 - **Level 2 Achievement:** ✅ VALIDATED
 - **Final XP:** 101/250 XP
 - **Evidence:**
   - Pre-F5 snapshot: `xp: 101, level: 2, autoSaveReason: "level_up", pendingLevelUpsLen: 1`
   - `savedAt: "2026-04-07T18:15:31.868Z"`
-  - `pendingLevelUps` structure: `{oldLevel: 1, newLevel: 2, classId: "warrior"}`
+  - `pendingLevelUps` structure: `{oldLevel: 1, newLevel: 2, classId: "rogue"}`
 - **F5 Reload Persistence:** ✅ VALIDATED
   - Post-F5 snapshot: `xp: 101, level: 2, autoSaveReason: "level_up", pendingLevelUpsLen: 1`
   - `savedAt: "2026-04-07T18:19:22.580Z"` (updated post-reload, showing new save event)
@@ -72,10 +72,10 @@
 
 | Agent | Slot | Class | Status | XP | Level | F5 Test | Evidence |
 |-------|------|-------|--------|----|----|---------|----------|
-| Sonnet 4.5 | 5 | Rogue | ✅ PASS | 128/250 | 2 | ✅ YES | pendingLevelUps, autoSaveReason |
-| GPT-5.2 | 4 | Warrior | ✅ PASS | 101/250 | 2 | ✅ YES | slot_4 snapshots, org-metadata PR |
-| GPT-5.1 | 4 | Warrior | ❌ FAIL | 33/100 | 1 | ❌ NO | UI deadlock (6 buttons only) |
-| GPT-5 | 4 | Cleric | ❌ FAIL | ~10-15/100 | 1 | ❌ NO | Pace failure, insufficient time |
+| Sonnet 4.5 | UI Slot 5 (localStorage slot_4) | Rogue | ✅ PASS | 128/250 | 2 | ✅ YES | pendingLevelUps, autoSaveReason |
+| GPT-5.2 | UI Slot 5 (localStorage slot_4) | Rogue | ✅ PASS | 101/250 | 2 | ✅ YES | slot_4 snapshots, org-metadata PR |
+| GPT-5.1 | UI Slot 5 (localStorage slot_4) | Warrior | ❌ FAIL | 33/100 | 1 | ❌ NO | UI deadlock (6 buttons only) |
+| GPT-5 | UI Slot 5 (localStorage slot_4) | Cleric | ❌ FAIL | ~10-15/100 | 1 | ❌ NO | Pace failure, insufficient time |
 
 **Success Rate:** 50% (2/4 agents)  
 **Total XP Achieved (Successes):** 229 XP (Sonnet 128 + GPT-5.2 101)  
